@@ -5,7 +5,6 @@ defined('BASEPATH') OR exit('No direct script access allowed');
  * SET DEFAULT TIMEZONE
  */
 if ( function_exists( 'date_default_timezone_set' ) ) {
-    //date_default_timezone_set('America/Toronto');
     date_default_timezone_set('Asia/Kolkata');
 }
 /*
@@ -31,8 +30,8 @@ if ( function_exists( 'date_default_timezone_set' ) ) {
 |
 */
 if($_SERVER['HTTP_HOST']=='localhost'){
-	$config['base_url'] = 'http://localhost/projects/test/soham/expensemanager/';
-	define("SITE_ROOT", "/projects/test/soham/expensemanager/");
+	$config['base_url'] = 'http://localhost/expensemanager/';
+	define("SITE_ROOT", "/expensemanager/");
 }else{
 	
 }
